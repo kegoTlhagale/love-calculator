@@ -16,13 +16,13 @@ import LoveCalculator from '../controllers/love_calculator.controller'
  *         schema:
  *           type: object
  *           properties:
- *             name1:
+ *             name:
  *               type: string
- *             name2:
+ *             otherName:
  *               type: string
  *     example:
- *         name1: "Kego"
- *         name2: "Thabo"
+ *         name: "Kego"
+ *         otherName: "Thabo"
  *     responses:
  *       200:
  *         description: calculated love successfully
