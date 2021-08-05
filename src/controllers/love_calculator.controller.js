@@ -25,10 +25,25 @@ exports.calculate = (req, res) => {
     return newArray
   }
 
-  const { name1, name2 } = req.body
+  const { name, otherName } = req.body
+
+
+  if (!name || name.trim() === '') {
+    res.status(HTTP_CODES.OK).json({
+      success: false,
+      error: { message: 'Please enter a valid name' }
+    })
+  }
+
+  if (!otherName || otherName.trim() === '') {
+    res.status(HTTP_CODES.OK).json({
+      success: false,
+      error: { message: 'Please enter a valid name' }
+    })
+  }
 
   let track = 1
-  let completeString = `${name1} loves ${name2}`
+  let completeString = `${name} loves ${otherName}`
   Logger.log(completeString)
 
   // convert all characters to lower case and remove white spaces

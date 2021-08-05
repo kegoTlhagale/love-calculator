@@ -1,6 +1,5 @@
 import LoveCalculator from '../controllers/love_calculator.controller'
 
-
 /**
  * @swagger
  * /calculate:
@@ -67,6 +66,6 @@ module.exports = function(app) {
  *
  *
  */
-
+   
   app.post('/love-calculator/calculate', LoveCalculator.calculate)
 }

@@ -3,7 +3,7 @@ A calculator that calculates the love between two people using their names
 
 ## API Documentation
 Use Google Chrome for best results
- - http://localhost:3000/api-docs (port could be different depending on your .env file)
+ - http://localhost:2000/api-docs
 
 ## To run the server: 
   - install nodejs
@@ -11,7 +11,7 @@ Use Google Chrome for best results
   - start the server by running `npm start` in the root directory
 
 ## To test on POSTMAN/Insomnia
-  - POST: http://localhost:3000/love-calculator/calculate
+  - POST: http://localhost:2000/love-calculator/calculate
   - Request Body(JSON): { "name1": "_yourName", "name2": "_yourPartnersName"}
 
 
