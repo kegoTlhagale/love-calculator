@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t pineapple-motor-service . &&
+docker run -p 2000:2000 love-calculator
