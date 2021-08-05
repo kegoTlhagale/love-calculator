@@ -10,9 +10,14 @@ Use Google Chrome for best results
   - install dependencies by running `npm i` in the root directory
   - start the server by running `npm start` in the root directory
 
+## To run the server with Docker:
+Run the following commands in the root directory
+ - install docker
+ - build and run the container by running `npm run docker` in the root directory
+
 ## To test on POSTMAN/Insomnia
   - POST: http://localhost:2000/love-calculator/calculate
-  - Request Body(JSON): { "name1": "_yourName", "name2": "_yourPartnersName"}
+  - Request Body(JSON): { "name": "_yourName", "otherName": "_yourPartnersName"}
 
 
 

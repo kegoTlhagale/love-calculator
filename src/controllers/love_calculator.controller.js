@@ -29,14 +29,14 @@ exports.calculate = (req, res) => {
 
 
   if (!name || name.trim() === '') {
-    res.status(HTTP_CODES.OK).json({
+    return res.status(HTTP_CODES.BAD_REQUEST).json({
       success: false,
       error: { message: 'Please enter a valid name' }
     })
   }
 
   if (!otherName || otherName.trim() === '') {
-    res.status(HTTP_CODES.OK).json({
+    return res.status(HTTP_CODES.BAD_REQUEST).json({
       success: false,
       error: { message: 'Please enter a valid name' }
     })
